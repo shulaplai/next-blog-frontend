@@ -1165,7 +1165,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "C:\\Users\\shula\\my-project\\frontend\\pages\\_document.js";
+var _jsxFileName = "C:\\Users\\shula\\Desktop\\react practices 2\\next-blog-frontend\\frontend\\pages\\_document.js";
 
 
 class MyDocument extends (next_document__WEBPACK_IMPORTED_MODULE_1___default()) {
