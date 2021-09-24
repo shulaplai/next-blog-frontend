@@ -153,7 +153,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_media__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/media */ "./lib/media.js");
 
 
-var _jsxFileName = "C:\\Users\\shula\\Desktop\\react practices 2\\next-blog-frontend\\my-project\\frontend\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\shula\\Desktop\\react practices 2\\next-blog-frontend\\frontend\\pages\\_app.js";
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
