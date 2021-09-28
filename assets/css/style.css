@@ -1,7 +1,16 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+
 a {
   text-decoration: none;
 }
-
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  padding: 10px 20px 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
 h1 {
   font-family: Staatliches;
   font-size: 120px;

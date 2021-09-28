@@ -12,7 +12,7 @@ const Image = ({ image, style }) => {
     <NextImage
       loader={loader}
       layout="responsive"
-      width={image.width}
+      width= {image.width}
       height={image.height}
       objectFit="contain"
       src={url}
