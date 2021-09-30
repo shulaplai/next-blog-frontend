@@ -4,7 +4,7 @@ import Link from "next/link"
 const Nav = ({ categories }) => {
   return (
     <div>
-      <nav className="uk-navbar-container" data-uk-navbar>
+      <nav className="uk-navbar-container" uk-data-navbar>
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav">
             <li>
@@ -20,7 +20,7 @@ const Nav = ({ categories }) => {
               return (
                 <li key={category.id}>
                   <Link as={`/category/${category.slug}`} href="/category/[id]">
-                    <a className="uk-link-reset">{category.name}</a>
+                    <a className="link-reset">{category.name}</a>
                   </Link>
                 </li>
               )

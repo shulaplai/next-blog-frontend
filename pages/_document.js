@@ -8,7 +8,7 @@ class MyDocument extends Document {
           {/* eslint-disable-next-line */}
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Staatliches"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap"
           />
           <link
             rel="stylesheet"
