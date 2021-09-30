@@ -4,6 +4,8 @@ const Layout = ({ children, categories, seo }) => (
   <>
     <Nav categories={categories} />
     {children}
+
+    
   </>
 )
 
