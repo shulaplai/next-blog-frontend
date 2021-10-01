@@ -1,9 +1,12 @@
 import React from "react"
 import Link from "next/link"
 import NextImage from "./image"
+import { StyledCard } from "./style/card.style"
+
 
 const Card = ({ article }) => {
   return (
+    <StyledCard>
     <Link as={`/article/${article.slug}`} href="/article/[id]">
       <a className="uk-link-reset">
         <div className="uk-card uk-card-muted">
@@ -21,6 +24,7 @@ const Card = ({ article }) => {
         </div>
       </a>
     </Link>
+    </StyledCard>
   )
 }
 
