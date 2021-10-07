@@ -1,0 +1,28 @@
+import Head from 'next/head'
+import { FallbackWrapper } from '~/components2/fallback/style'
+
+export default () => (
+  <FallbackWrapper>
+    <Head>
+      <title>Fallback</title>
+    </Head>
+    <div
+      className="content"
+    >
+      <div>
+        <h1
+        >
+          404
+        </h1>
+        <div
+          className="statement"
+        >
+          <h2
+          >
+            This is offline fallback page
+          </h2>
+        </div>
+      </div>
+    </div>
+  </FallbackWrapper>
+)
