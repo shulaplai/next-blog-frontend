@@ -25,6 +25,8 @@ const Article = ({ article, categories }) => {
         data-src={imageUrl}
         data-srcset={imageUrl}
         data-uk-img
+        width="100%"
+        hight="100%"
       >
         <h1>{article.title}</h1>
       </div>
