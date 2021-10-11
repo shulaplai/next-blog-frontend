@@ -5,11 +5,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
+
           {/* eslint-disable-next-line */}
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap"
-          />
+          <link rel="stylesheet" href="fontawesome/css/all.min.css" />
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css"

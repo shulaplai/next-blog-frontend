@@ -1,31 +1,40 @@
 import React from "react"
 import Link from "next/link"
 import NextImage from "./image"
-import { StyledCard } from "./style/card.style"
 
+import Card from "@mui/material/Card"
+import CardContent from "@mui/material/CardContent"
+import CardMedia from "@mui/material/CardMedia"
+import Typography from "@mui/material/Typography"
+import { Button, CardActionArea, CardActions } from "@mui/material"
 
-const Card = ({ article }) => {
+const Cards = ({ article }) => {
   return (
-    <StyledCard>
-    <Link as={`/article/${article.slug}`} href="/article/[id]">
-      <a className="uk-link-reset">
-        <div className="uk-card uk-card-muted">
-          <div className="uk-card-media-top">
-            <NextImage image={article.image} />
-          </div>
-          <div className="uk-card-body">
-            <p id="category" className="uk-text-uppercase">
-              {article.category.name}
-            </p>
-            <p id="title" className="uk-text-large">
-              {article.title}
-            </p>
-          </div>
-        </div>
-      </a>
+    <Link as={`/article/${article.slug}`} href="/article/[id] " passHref>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea>
+          <CardMedia image={article.image} />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              <p id="category" className="uk-text-uppercase">
+                {article.category.name}
+              </p>
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              <p id="title" className="uk-text-large">
+                {article.title}
+              </p>
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+        </CardActions>
+      </Card>{" "}
     </Link>
-    </StyledCard>
   )
 }
 
-export default Card
+export default Cards
