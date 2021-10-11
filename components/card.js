@@ -1,27 +1,39 @@
 import React from "react"
 import Link from "next/link"
 import NextImage from "./image"
+import Card from "react-bootstrap/Card"
+import CardGroup from "react-bootstrap/CardGroup"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Nav from "./nav.js"
+import Container from "react-bootstrap/Container"
 
-const Card = ({ article }) => {
+const Cards = ({ article }) => {
   return (
-    <Link as={`/article/${article.slug}`} href="/article/[id]">
-      <a className="uk-link-reset">
-        <div className="uk-card uk-card-muted">
-          <div className="uk-card-media-top">
-            <NextImage image={article.image} />
-          </div>
-          <div className="uk-card-body">
-            <p id="category" className="uk-text-uppercase">
-              {article.category.name}
-            </p>
-            <p id="title" className="uk-text-large">
-              {article.title}
-            </p>
-          </div>
-        </div>
-      </a>
-    </Link>
+    <Container>
+      <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
+        <Row>
+          <Col xs={10} md={4}>
+            <Nav />
+          </Col>
+          <Col xs={10} md={4}>
+            <Card>
+              <NextImage
+                variant="top"
+                image={article.image}
+                width="100%"
+                hight="100%"
+              />
+              <Card.Body>
+                <Card.Title>`{article.category.name}`</Card.Title>
+                <Card.Text>{article.title}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Link>
+    </Container>
   )
 }
 
-export default Card
+export default Cards

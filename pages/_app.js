@@ -14,7 +14,12 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href={getStrapiMedia(global.favicon)} />
+        <link
+          rel="shortcut icon"
+          href={getStrapiMedia(global.favicon)}
+          width="50px"
+          hight="100%"
+        />
       </Head>
       <GlobalContext.Provider value={global}>
         <Component {...pageProps} />
@@ -22,7 +27,6 @@ const MyApp = ({ Component, pageProps }) => {
     </>
   )
 }
-
 // getInitialProps disables automatic static optimization for pages that don't
 // have getStaticProps. So article, category and home pages still get SSG.
 // Hopefully we can replace this with getStaticProps once this issue is fixed:
