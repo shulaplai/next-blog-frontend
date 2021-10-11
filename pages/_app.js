@@ -4,6 +4,7 @@ import "../assets/css/style.css"
 import { createContext } from "react"
 import { fetchAPI } from "../lib/api"
 import { getStrapiMedia } from "../lib/media"
+import Layout from "../components/layout"
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({})
@@ -12,19 +13,21 @@ const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps
 
   return (
-    <>
-      <Head>
-        <link
-          rel="shortcut icon"
-          href={getStrapiMedia(global.favicon)}
-          width="50px"
-          hight="100%"
-        />
-      </Head>
-      <GlobalContext.Provider value={global}>
-        <Component {...pageProps} />
-      </GlobalContext.Provider>
-    </>
+    <Layout>
+      <div className="uk-child-width-2-3@m uk-grid-match" data-uk-grid>
+        <Head>
+          <link
+            rel="shortcut icon"
+            href={getStrapiMedia(global.favicon)}
+            width="50px"
+            hight="100%"
+          />
+        </Head>
+        <GlobalContext.Provider value={global}>
+          <Component {...pageProps} />
+        </GlobalContext.Provider>
+      </div>
+    </Layout>
   )
 }
 // getInitialProps disables automatic static optimization for pages that don't

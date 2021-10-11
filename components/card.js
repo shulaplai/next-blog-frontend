@@ -19,10 +19,10 @@ const Cards = ({ article }) => {
           <Col xs={10} md={4}>
             <Card>
               <NextImage
-                variant="top"
+                variant="bottom"
                 image={article.image}
-                width="100%"
-                hight="100%"
+                width="10px"
+                hight="100px"
               />
               <Card.Body>
                 <Card.Title>`{article.category.name}`</Card.Title>
