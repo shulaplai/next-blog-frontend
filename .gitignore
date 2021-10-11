@@ -9,7 +9,8 @@ Icon
 .Spotlight-V100
 .Trashes
 ._*
-
+node_modules/
+node_modules 
 
 ############################
 # Linux
@@ -30,25 +31,12 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
-// .gitnignore
-# next.js build output
-.next
-.webpack
-# dotenv environment variables file (build for Zeit Now)
-.env
-.env.build
-
-# Dependency directories
 node_modules/
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 ############################
 # Packages
 ############################
+node_modules/
 
 *.7z
 *.csv
@@ -59,7 +47,6 @@ yarn-error.log*
 *.jar
 *.rar
 *.tar
-*.zip
 *.com
 *.class
 *.dll
@@ -109,6 +96,7 @@ results
 node_modules
 .node_history
 
+
 ############################
 # Tests
 ############################
@@ -120,9 +108,14 @@ coverage
 # Strapi
 ############################
 
-.env
-license.txt
 exports
-*.cache
+.cache
 build
-.strapi-updater.json
+
+# Custom
+node_modules/
+.next
+.vscode
+.next
+.env.*
+!.env.example
