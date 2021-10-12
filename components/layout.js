@@ -12,7 +12,9 @@ const Layout = ({ children, categories, seo }) => (
         <Nav categories={categories} />
         {children}
       </Col>
-      <Col xs={12} md={4}></Col>
+      <Col xs={12} md={4}>
+        `vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv`
+      </Col>
     </Row>
   </Container>
 )
