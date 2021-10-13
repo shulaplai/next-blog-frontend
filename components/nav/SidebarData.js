@@ -2,7 +2,8 @@ import React from "react"
 import * as FaIcons from "react-icons/fa"
 import * as AiIcons from "react-icons/ai"
 import * as IoIcons from "react-icons/io"
-
+import { AiOutlineBook, AiFillAlert } from "react-icons/ai"
+import { GrPersonalComputer } from "react-icons/gr"
 export const SidebarData = [
   {
     title: "Home",
@@ -19,7 +20,7 @@ export const SidebarData = [
   {
     title: "Tech",
     path: "https://roastedtea.click/category/tech",
-    icon: <FaIcons.FaCartPlus />,
+    icon: <GrPersonalComputer />,
     cName: "nav-text",
   },
   {
@@ -31,13 +32,13 @@ export const SidebarData = [
   {
     title: "Story",
     path: "https://roastedtea.click/category/story",
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    icon: <AiOutlineBook />,
     cName: "nav-text",
   },
   {
     title: "New",
     path: "https://roastedtea.click/category/new",
-    icon: <IoIcons.IoMdHelpCircle />,
+    icon: <AiFillAlert />,
     cName: "nav-text",
   },
 ]
