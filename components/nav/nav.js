@@ -26,14 +26,13 @@ const Nav = ({ categories }) => {
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
               <Link href="/" passHref className="menu-bars">
-                <FaIcons.FaBars onClick={showSidebar} />
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <Link href="https://roastedtea.click/category/new">
+                  <Link href={item.path}>
                     <a>
                       {item.icon}
                       <span>{item.title}</span>
