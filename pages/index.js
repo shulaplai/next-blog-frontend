@@ -4,22 +4,24 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
 import Nav from "../components/nav/nav.js"
+import Link from "next/link"
 
 const Home = ({ articles, categories, homepage }) => {
   return (
     <Layout categories={categories}>
       <Seo seo={homepage.seo} />
-      <div className="uk-section">
-        <div
-          className="uk-container uk-container-large"
-          width="50px"
-          hight="100%"
-        >
-          
-          
-          <Articles articles={articles} />
-        </div>
-      </div>
+
+      <p className="intro">
+        Hello, I am Lai shu Lap. This is my blog. In here you can find
+        <Link href="https://roastedtea.click/category/translation">
+          translations
+        </Link>
+        ,{" "}
+        <Link href="https://roastedtea.click/category/baseball">
+          baseball info
+        </Link>
+        , tech , story and other thing
+      </p>
     </Layout>
   )
 }
