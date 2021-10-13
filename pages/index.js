@@ -16,11 +16,13 @@ const Home = ({ articles, categories, homepage }) => {
         <Link href="https://roastedtea.click/category/translation">
           translations
         </Link>
-        ,{" "}
+        
         <Link href="https://roastedtea.click/category/baseball">
           baseball info
         </Link>
-        , tech , story and other thing
+        , tech , story and other thing. 
+        
+        
       </p>
     </Layout>
   )

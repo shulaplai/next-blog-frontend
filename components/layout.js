@@ -8,7 +8,7 @@ const Layout = ({ children, categories, seo }) => (
   <Container>
     {/* Stack the columns on mobile by making one full-width and the other half-width */}
     <Row>
-      <Col xs={14} md={4}>
+      <Col >
         <Nav categories={categories} />
         {children}
       </Col>

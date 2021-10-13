@@ -28,7 +28,7 @@ const Nav = ({ categories }) => {
             <ul className="nav-menu-items" onClick={showSidebar}>
               <li className="navbar-toggle">
                 <Link
-                  href="https://roastedtea.click/category/baseball"
+                  href="/"
                   className="menu-bars"
                 >
                   <AiIcons.AiOutlineClose />
