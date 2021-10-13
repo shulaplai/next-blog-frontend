@@ -3,6 +3,7 @@ import Articles from "../components/articles"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
+import Nav from "../components/nav/nav.js"
 
 const Home = ({ articles, categories, homepage }) => {
   return (
@@ -14,7 +15,8 @@ const Home = ({ articles, categories, homepage }) => {
           width="50px"
           hight="100%"
         >
-          <h1>{homepage.hero.title}</h1>
+          
+          
           <Articles articles={articles} />
         </div>
       </div>

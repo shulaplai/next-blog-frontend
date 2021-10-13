@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card"
 import CardGroup from "react-bootstrap/CardGroup"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Nav from "./nav.js"
+import Nav from "./nav/nav"
 import Container from "react-bootstrap/Container"
 
 const Cards = ({ article }) => {
@@ -13,15 +13,15 @@ const Cards = ({ article }) => {
     <Container>
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
         <Row>
-          <Col xs={10} md={4}>
-            <Nav />
-          </Col>
+          
+          
+         
           <Col xs={10} md={4}>
             <Card>
               <NextImage
                 variant="bottom"
                 image={article.image}
-                width="10px"
+                width="100px"
                 hight="100px"
               />
               <Card.Body>
