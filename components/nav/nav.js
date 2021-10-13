@@ -26,6 +26,7 @@ const Nav = ({ categories }) => {
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
               <Link href="/" passHref className="menu-bars">
+                <FaIcons.FaBars onClick={showSidebar} />
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
