@@ -3,7 +3,7 @@ import * as FaIcons from "react-icons/fa"
 import * as AiIcons from "react-icons/ai"
 import * as IoIcons from "react-icons/io"
 import { AiOutlineBook, AiFillAlert } from "react-icons/ai"
-import { GrPersonalComputer } from "react-icons/gr"
+import { HiDesktopComputer } from "react-icons/hi"
 export const SidebarData = [
   {
     title: "Home",
@@ -20,7 +20,7 @@ export const SidebarData = [
   {
     title: "Tech",
     path: "https://roastedtea.click/category/tech",
-    icon: <GrPersonalComputer />,
+    icon: <HiDesktopComputer />,
     cName: "nav-text",
   },
   {
