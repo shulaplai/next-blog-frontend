@@ -13,19 +13,21 @@ const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps
 
   return (
-    <div className="uk-child-width-2-3@m uk-grid-match" data-uk-grid>
-      <Head>
-        <link
-          rel="shortcut icon"
-          href={getStrapiMedia(global.favicon)}
-          width="50px"
-          hight="100%"
-        />
-      </Head>
-      <GlobalContext.Provider value={global}>
-        <Component {...pageProps} />
-      </GlobalContext.Provider>
-    </div>
+    <Layout>
+      <div className="uk-child-width-2-3@m uk-grid-match" data-uk-grid>
+        <Head>
+          <link
+            rel="shortcut icon"
+            href={getStrapiMedia(global.favicon)}
+            width="50px"
+            hight="100%"
+          />
+        </Head>
+        <GlobalContext.Provider value={global}>
+          <Component {...pageProps} />
+        </GlobalContext.Provider>
+      </div>
+    </Layout>
   )
 }
 // getInitialProps disables automatic static optimization for pages that don't

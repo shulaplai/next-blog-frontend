@@ -8,7 +8,7 @@ import Link from "next/link"
 
 const Home = ({ articles, categories, homepage }) => {
   return (
-    <Layout categories={categories}>
+    <div>
       <Seo seo={homepage.seo} />
 
       <p className="intro">
@@ -21,7 +21,7 @@ const Home = ({ articles, categories, homepage }) => {
         </Link>
         , tech , story and other thing.
       </p>
-    </Layout>
+    </div>
   )
 }
 
