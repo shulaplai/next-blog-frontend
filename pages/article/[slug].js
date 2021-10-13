@@ -17,7 +17,7 @@ const Article = ({ article, categories }) => {
   }
 
   return (
-    <Layout categories={categories}>
+    <div>
       <Seo seo={seo} />
 
       <div
@@ -52,7 +52,7 @@ const Article = ({ article, categories }) => {
           </div>
         </div>
       </div>
-    </Layout>
+    </div>
   )
 }
 
