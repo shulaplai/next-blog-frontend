@@ -31,6 +31,7 @@ intro:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position:top;
 }
 
 .menu-bars {
