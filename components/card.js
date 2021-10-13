@@ -13,9 +13,6 @@ const Cards = ({ article }) => {
     <Container>
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
         <Row>
-          
-          
-         
           <Col xs={10} md={4}>
             <Card>
               <NextImage
