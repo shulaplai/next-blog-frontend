@@ -21,6 +21,7 @@ const Home = ({ articles, categories, homepage }) => {
         </Link>
         , tech , story and other thing.
       </p>
+      <p>Github icon and email address</p>
     </div>
   )
 }

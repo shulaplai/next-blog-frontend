@@ -12,14 +12,14 @@ const Cards = ({ article }) => {
   return (
     <Container>
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
-        <Row>
+        <Row className="articlecard">
           <Col xs={10} md={4}>
             <Card>
               <NextImage
                 variant="bottom"
                 image={article.image}
-                width="100px"
-                hight="100px"
+                width="30px"
+                hight="30px"
               />
               <Card.Body>
                 <Card.Title>`{article.category.name}`</Card.Title>
