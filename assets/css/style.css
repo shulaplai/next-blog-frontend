@@ -114,3 +114,15 @@ span {
   border-style: solid;
   background-color: #ffffff;
 }
+.ukcard {
+ color: #666666;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  border-style: solid;
+  background-color: #ffffff;
+}
+.ukcard:hover {
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
