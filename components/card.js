@@ -13,13 +13,15 @@ const Cards = ({ article }) => {
     <div className="uk-child-width-1-2@m" uk-grid>
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
         <div className="uk-card uk-card-default">
-          <div className="uk-card-media-top">
+          <div className="uk-card--media-left uk-cover-container">
             <NextImage
               variant="bottom"
               image={article.image}
               width="270px"
               hight="270px"
             />
+            <canvas width="600" height="400"></canvas>
+
             <div className="uk-card-body">
               <h3 className="uk-card-title">{article.category.name}</h3>
               <p>{article.title}</p>
