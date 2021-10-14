@@ -107,14 +107,12 @@ span {
   margin-left: 16px;
 }
 .articlecard {
-  display: flex;
-  border-style: solid;
-  background-color: #ffffff;
-
-  border-width: 2.4px;
+  
   color: #666666;
   width: 300px;
   height: 300px;
   display: flex;
-  border-style: solid;
+  border-style: solid;display: flex;
+  background-color: #ffffff;
+
 }
