@@ -15,20 +15,18 @@ const Cards = ({ article }) => {
       uk-grid
     >
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
-        <div className="uk-card uk-card-default">
-          <div className="uk-card-media-left uk-cover-container">
-            <NextImage
-              variant="left"
-              image={article.image}
-              width="270px"
-              hight="270px"
-              uk-cover
-            />
-            <canvas width="600" height="400"></canvas>
+        <div className="uk-card-media-left uk-cover-container">
+          <NextImage
+            variant="left"
+            image={article.image}
+            width="270px"
+            hight="270px"
+            uk-cover
+          />
+          <canvas width="600" height="400"></canvas>
 
-            <div className="uk-card-body">
-              <h3 className="uk-card-title">{article.title}</h3>
-            </div>
+          <div className="uk-card-body">
+            <h3 className="uk-card-title">{article.title}</h3>
           </div>
         </div>
       </Link>
