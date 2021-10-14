@@ -8,9 +8,9 @@
   padding-left: 30%;
   padding-right: 30%;
   color: #000000;
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
-  font-weight: lighter;
+  font-weight: bold;
   font-variant: small-caps;
 
   height: auto;
@@ -107,13 +107,6 @@ span {
   margin-left: 16px;
 }
 .articlecard {
-  width: 370px;
-  height: 370px;
- 
-  border-style: solid;
-  background-color: #ffffff;
-  color: #666666;
- 
-  position: top;
-  margin-bottom: 80px;
+  padding: 10%;
+  display: flex;
 }
