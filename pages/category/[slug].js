@@ -11,7 +11,7 @@ const Category = ({ category, categories }) => {
   }
 
   return (
-    <div>
+    <Layout>
       <Seo seo={seo} />
       <div>
         <div>
@@ -19,7 +19,7 @@ const Category = ({ category, categories }) => {
           <Articles articles={category.articles} />
         </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
