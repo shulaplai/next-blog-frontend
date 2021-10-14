@@ -12,8 +12,8 @@ const Image = ({ image, style }) => {
     <NextImage
       loader={loader}
       layout="fill"
-      width="300px"
-      height="300px"
+      width="270px"
+      height="270px"
       objectFit="contain"
       src={url}
       alt={alternativeText || ""}

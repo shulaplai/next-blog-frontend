@@ -109,7 +109,7 @@ span {
 .articlecard {
   width: 300px;
   height: 300px;
-  display: flex;
+  
   border-style: solid;
   background-color: #ffffff;
   position: relative;

@@ -16,8 +16,8 @@ const Cards = ({ article }) => {
           <NextImage
             variant="top"
             image={article.image}
-            width="300px"
-            hight="300px"
+            width="270px"
+            hight="270px"
           />
           <Card.Body>
             <Card.Title>{article.category.name}</Card.Title>
