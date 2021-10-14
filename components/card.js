@@ -12,7 +12,7 @@ const Cards = ({ article }) => {
   return (
     <Container className="articlecard">
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
-        <Card>
+        <div className="uk-card uk-card-default">
           <div className="uk-card-media-top">
             <NextImage
               variant="bottom"
@@ -25,7 +25,7 @@ const Cards = ({ article }) => {
               <Card.Text>{article.title}</Card.Text>
             </Card.Body>
           </div>
-        </Card>
+        </div>
       </Link>
     </Container>
   )
