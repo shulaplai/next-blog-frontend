@@ -10,9 +10,9 @@ import Container from "react-bootstrap/Container"
 
 const Cards = ({ article }) => {
   return (
-    <Container>
+    <Container className="articlecard">
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
-        <Card className="articlecard">
+        <Card>
           <NextImage
             variant="bottom"
             image={article.image}
