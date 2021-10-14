@@ -10,7 +10,7 @@ import Container from "react-bootstrap/Container"
 
 const Cards = ({ article }) => {
   return (
-    <Container className="uk-child-width-1-2@m" uk-grid>
+    <Container>
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
         <div className="uk-card uk-card-default">
           <div className="uk-card-media-top">

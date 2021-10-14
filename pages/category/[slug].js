@@ -13,11 +13,10 @@ const Category = ({ category, categories }) => {
   return (
     <div>
       <Seo seo={seo} />
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">
-          <h1>{category.name}</h1>
-          <Articles articles={category.articles} />
-        </div>
+
+      <div className="uk-container uk-container-large">
+        <h1>{category.name}</h1>
+        <Articles articles={category.articles} />
       </div>
     </div>
   )
