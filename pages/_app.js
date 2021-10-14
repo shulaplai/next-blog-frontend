@@ -13,7 +13,7 @@ const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps
 
   return (
-    <div className="uk-child-width-2-3@m uk-grid-match" data-uk-grid>
+    <Layout>
       <Head>
         <link
           rel="shortcut icon"
@@ -25,7 +25,7 @@ const MyApp = ({ Component, pageProps }) => {
       <GlobalContext.Provider value={global}>
         <Component {...pageProps} />
       </GlobalContext.Provider>
-    </div>
+    </Layout>
   )
 }
 // getInitialProps disables automatic static optimization for pages that don't

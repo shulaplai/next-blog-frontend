@@ -17,37 +17,39 @@ const Article = ({ article, categories }) => {
   }
 
   return (
-    <div className="uk-child-width-2-3@m uk-grid-match" data-uk-grid>
+    <div>
       <Seo seo={seo} />
-
-      <div
-        id="banner"
-        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-        data-src={imageUrl}
-        data-srcset={imageUrl}
-        data-uk-img
-        width="100%"
-        hight="100%"
-      >
-        <h1>{article.title}</h1>
-      </div>
       <div className="uk-section">
-        <div className="uk-container uk-container-small">
-          <ReactMarkdown source={article.content} escapeHtml={false} />
-          <hr className="uk-divider-small" />
-          <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
-            <div>
-              {article.author.picture && (
-                <NextImage image={article.author.picture} />
-              )}
-            </div>
-            <div className="uk-width-expand">
-              <p className="uk-margin-remove-bottom">
-                By {article.author.name}
-              </p>
-              <p className="uk-text-meta uk-margin-remove-top">
-                <Moment format="MMM Do YYYY">{article.published_at}</Moment>
-              </p>
+        <div className="uk-container uk-container-large"></div>
+        <div
+          id="banner"
+          className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
+          data-src={imageUrl}
+          data-srcset={imageUrl}
+          data-uk-img
+          width="100%"
+          hight="100%"
+        >
+          <h1>{article.title}</h1>
+        </div>
+        <div className="uk-section">
+          <div className="uk-container uk-container-small">
+            <ReactMarkdown source={article.content} escapeHtml={false} />
+            <hr className="uk-divider-small" />
+            <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
+              <div>
+                {article.author.picture && (
+                  <NextImage image={article.author.picture} />
+                )}
+              </div>
+              <div className="uk-width-expand">
+                <p className="uk-margin-remove-bottom">
+                  By {article.author.name}
+                </p>
+                <p className="uk-text-meta uk-margin-remove-top">
+                  <Moment format="MMM Do YYYY">{article.published_at}</Moment>
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -109,16 +109,11 @@ span {
 .articlecard {
   width: 370px;
   height: 370px;
-  justify-content: center;
+ 
   border-style: solid;
   background-color: #ffffff;
   color: #666666;
- display: flex;
-    justify-content: center;
-    align-items: center;
+ 
   position: top;
   margin-bottom: 80px;
-}
-.articlemiddle {
-  
 }
