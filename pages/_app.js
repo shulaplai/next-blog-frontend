@@ -40,17 +40,4 @@ MyApp.getInitialProps = async (ctx) => {
   // Pass the data to our page via props
   return { ...appProps, pageProps: { global } }
 }
-import { useRouter } from "next/router"
-
-function Post({ post }) {
-  const router = useRouter()
-
-  // If the page is not yet generated, this will be displayed
-  // initially until getStaticProps() finishes running
-  if (router.isFallback) {
-    return <div>Loading...</div>
-  }
-
-  // Render post...
-}
 export default MyApp
