@@ -100,8 +100,8 @@ span {
   margin-left: 16px;
 }
 .articlecard {
-  padding : 10%;
+  width: 300px;
   display: flex;
   border-style: solid;
-  background-color: #3a50c9
+  background-color: #ffffff
 }
