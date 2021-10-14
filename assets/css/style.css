@@ -113,13 +113,12 @@ span {
   border-style: solid;
   background-color: #ffffff;
   color: #666666;
-
+ display: flex;
+    justify-content: center;
+    align-items: center;
   position: top;
-  align-items: center;
   margin-bottom: 80px;
 }
 .articlemiddle {
-   display: flex;
-    justify-content: center;
-    align-items: center;
+  
 }
