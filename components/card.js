@@ -15,7 +15,7 @@ const Cards = ({ article }) => {
       uk-grid
     >
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
-        <div className="uk-card-media-left uk-cover-container">
+        <div className="uk-card-media-left uk-cover-container uk-card-hover">
           <NextImage
             variant="left"
             image={article.image}

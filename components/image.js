@@ -11,7 +11,7 @@ const Image = ({ image, style }) => {
   return (
     <NextImage
       loader={loader}
-      layout="fixed"
+      layout="intrinsic"
       width="270px"
       height="270px"
       src={url}
