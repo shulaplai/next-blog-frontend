@@ -20,10 +20,10 @@ const Cards = ({ article }) => {
               width="270px"
               hight="270px"
             />
-            <Card.Body>
-              <Card.Title>{article.category.name}</Card.Title>
-              <Card.Text>{article.title}</Card.Text>
-            </Card.Body>
+            <div className="uk-card-body">
+              <h3 className="uk-card-title">{article.category.name}</h3>
+              <p>{article.title}</p>
+            </div>
           </div>
         </div>
       </Link>
