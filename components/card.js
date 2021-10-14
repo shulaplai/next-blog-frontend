@@ -22,7 +22,7 @@ const Cards = ({ article }) => {
                 hight="100%"
               />
               <Card.Body>
-                <Card.Title>`{article.category.name}`</Card.Title>
+                <Card.Title>{article.category.name}</Card.Title>
                 <Card.Text>{article.title}</Card.Text>
               </Card.Body>
             </Card>
