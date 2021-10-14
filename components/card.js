@@ -18,7 +18,7 @@ const Cards = ({ article }) => {
         <div className="uk-card uk-card-default">
           <div className="uk-card--media-left uk-cover-container">
             <NextImage
-              variant="bottom"
+              variant="left"
               image={article.image}
               width="270px"
               hight="270px"
