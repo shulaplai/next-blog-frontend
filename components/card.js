@@ -12,22 +12,18 @@ const Cards = ({ article }) => {
   return (
     <Container className="articlecard">
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
-        <Row>
-          <Col>
-            <Card>
-              <NextImage
-                variant="bottom"
-                image={article.image}
-                width="100%"
-                hight="100%"
-              />
-              <Card.Body>
-                <Card.Title>{article.category.name}</Card.Title>
-                <Card.Text>{article.title}</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+        <Card>
+          <NextImage
+            variant="bottom"
+            image={article.image}
+            width="300px"
+            hight="300px"
+          />
+          <Card.Body>
+            <Card.Title>{article.category.name}</Card.Title>
+            <Card.Text>{article.title}</Card.Text>
+          </Card.Body>
+        </Card>
       </Link>
     </Container>
   )
