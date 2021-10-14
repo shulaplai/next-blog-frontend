@@ -27,8 +27,7 @@ const Cards = ({ article }) => {
             <canvas width="600" height="400"></canvas>
 
             <div className="uk-card-body">
-              <h3 className="uk-card-title">{article.category.name}</h3>
-              <p>{article.title}</p>
+              <h3 className="uk-card-title">{article.title}</h3>
             </div>
           </div>
         </div>
