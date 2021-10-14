@@ -99,3 +99,7 @@ intro:hover {
 span {
   margin-left: 16px;
 }
+.articlecard {
+  padding : 10%;
+  display: flex;
+}
