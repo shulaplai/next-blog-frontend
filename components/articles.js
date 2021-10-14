@@ -8,7 +8,7 @@ const Articles = ({ articles }) => {
 
   return (
     <div>
-      <div className="uk-child-width-1-2@s">
+      <div className=".uk-child-width-*	">
         <div>
           {leftArticles.map((article, i) => {
             return (
@@ -17,7 +17,7 @@ const Articles = ({ articles }) => {
           })}
         </div>
         <div>
-          <div className="uk-child-width-1-2@s">
+          <div className=".uk-child-width-*	">
             {rightArticles.map((article, i) => {
               return (
                 <Cards
