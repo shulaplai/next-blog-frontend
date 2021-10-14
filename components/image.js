@@ -12,9 +12,9 @@ const Image = ({ image, style }) => {
     <NextImage
       loader={loader}
       layout="fill"
-      width="100%"
-      height="100%"
-      objectFit="fill"
+      width="300px"
+      height="300px"
+      objectFit="contain"
       src={url}
       alt={alternativeText || ""}
     />

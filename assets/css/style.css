@@ -112,8 +112,8 @@ span {
   display: flex;
   border-style: solid;
   background-color: #ffffff;
+  position: relative;
 
   border-width: 2.4px;
   color: #666666;
-
 }
