@@ -16,7 +16,7 @@ const Cards = ({ article }) => {
     >
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
         <div className="uk-card uk-card-default">
-          <div className="uk-card--media-left uk-cover-container">
+          <div className="uk-card-media-left uk-cover-container">
             <NextImage
               variant="left"
               image={article.image}
