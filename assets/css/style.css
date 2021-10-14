@@ -109,7 +109,7 @@ span {
 .articlecard {
   width: 300px;
   height: 300px;
-  
+
   border-style: solid;
   background-color: #ffffff;
   position: relative;
@@ -118,5 +118,5 @@ span {
   justify-content: center;
   position: bottom;
   align-items: center;
-  
+  margin-bottom: 20px;
 }
