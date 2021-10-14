@@ -107,15 +107,14 @@ span {
   margin-left: 16px;
 }
 .articlecard {
-  width: 330px;
-  height: 330px;
-
+  width: 370px;
+  height: 370px;
+  justify-content: center;
   border-style: solid;
   background-color: #ffffff;
-  position: relative;
   color: #666666;
-  justify-content: center;
+
   position: bottom;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
