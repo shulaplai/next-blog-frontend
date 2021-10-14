@@ -17,7 +17,7 @@ const Article = ({ article, categories }) => {
   }
 
   return (
-    <Layout>
+    <div className="uk-child-width-2-3@m uk-grid-match" data-uk-grid>
       <Seo seo={seo} />
 
       <div
@@ -52,7 +52,7 @@ const Article = ({ article, categories }) => {
           </div>
         </div>
       </div>
-    </Layout>
+    </div>
   )
 }
 
