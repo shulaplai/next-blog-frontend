@@ -113,7 +113,9 @@ span {
   border-style: solid;
   background-color: #ffffff;
   position: relative;
-
-  border-width: 2.4px;
+  border-width: 20px;
   color: #666666;
+  justify-content: center;
+  position: bottom;
+  align-items: center;
 }
