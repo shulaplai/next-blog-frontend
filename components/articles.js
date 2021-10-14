@@ -17,7 +17,7 @@ const Articles = ({ articles }) => {
           })}
         </div>
         <div>
-          <div className="uk-child-width-1-2@m uk-grid-match" data-uk-grid>
+          <div>
             {rightArticles.map((article, i) => {
               return (
                 <Cards
