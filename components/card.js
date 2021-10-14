@@ -22,6 +22,7 @@ const Cards = ({ article }) => {
               image={article.image}
               width="270px"
               hight="270px"
+              uk-cover
             />
             <canvas width="600" height="400"></canvas>
 
