@@ -10,9 +10,9 @@ import Container from "react-bootstrap/Container"
 
 const Cards = ({ article }) => {
   return (
-    <Container>
+    <Container className="articlecard">
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
-        <Row className="articlecard">
+        <Row>
           <Col xs={10} md={4}>
             <Card>
               <NextImage
