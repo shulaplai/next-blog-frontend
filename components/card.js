@@ -23,7 +23,6 @@ const Cards = ({ article }) => {
             hight="270px"
             uk-cover
           />
-          <canvas width="600" height="400"></canvas>
 
           <div className="uk-card-body">
             <h3 className="uk-card-title">{article.title}</h3>
