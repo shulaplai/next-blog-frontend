@@ -7,7 +7,7 @@ const Articles = ({ articles }) => {
   const rightArticles = articles.slice(leftArticlesCount, articles.length)
 
   return (
-    <div>
+    <div className="articlemiddle">
       <div>
         <div>
           {leftArticles.map((article, i) => {

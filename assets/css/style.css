@@ -114,7 +114,12 @@ span {
   background-color: #ffffff;
   color: #666666;
 
-  position: bottom;
+  position: top;
   align-items: center;
   margin-bottom: 80px;
+}
+.articlemiddle {
+   display: flex;
+    justify-content: center;
+    align-items: center;
 }

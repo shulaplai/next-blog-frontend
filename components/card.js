@@ -15,7 +15,7 @@ const Cards = ({ article }) => {
         <Row>
           <Card>
             <NextImage
-              variant="top"
+              variant="bottom"
               image={article.image}
               width="270px"
               hight="270px"
