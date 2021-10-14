@@ -5,6 +5,9 @@ import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
 import Nav from "../components/nav/nav.js"
 import Link from "next/link"
+import Image from "next/image"
+import linkedin_icon from "../assets/css/LinkedIn_logo_initials.png"
+import githubicon from "../assets/css/GitHub-Mark.png"
 
 const Home = ({ articles, categories, homepage }) => {
   return (
@@ -21,7 +24,24 @@ const Home = ({ articles, categories, homepage }) => {
         </Link>
         , tech , story and other thing.
       </p>
-      <p>Github icon and email address</p>
+      <p className="introicon">
+        <a href="https://github.com/shulaplai">
+          <Image
+            src={githubicon}
+            alt="Picture of the author"
+            width={50}
+            height={50}
+          />
+        </a>
+        <a href="https://linkedin.com">
+          <Image
+            src={linkedin_icon}
+            alt="Picture of the author"
+            width={50}
+            height={50}
+          />
+        </a>
+      </p>
     </div>
   )
 }

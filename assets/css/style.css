@@ -19,7 +19,14 @@
 intro:hover {
   text-decoration: underline;
 }
+.introicon {
+  justify-content: center;
 
+  align-items: center;
+  padding-top: 10%;
+  padding-left: 45%;
+  padding-right: 40%;
+}
 .introlink {
   color: aqua;
 }
@@ -31,7 +38,7 @@ intro:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position:top;
+  position: top;
 }
 
 .menu-bars {
@@ -50,7 +57,7 @@ intro:hover {
   top: 0;
   left: -100%;
   transition: 850ms;
-  z-index: 2
+  z-index: 2;
 }
 
 .nav-menu.active {
@@ -103,5 +110,5 @@ span {
   width: 300px;
   display: flex;
   border-style: solid;
-  background-color: #ffffff
+  background-color: #ffffff;
 }
