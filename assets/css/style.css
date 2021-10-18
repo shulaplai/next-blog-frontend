@@ -1,3 +1,12 @@
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
 .intro {
   display: block;
   justify-content: center;
@@ -7,11 +16,11 @@
   padding-left: 30%;
   padding-right: 30%;
   color: #000000;
-  font-size: 20px;
+  height: auto;
+   font-size: 20px;
   font-style: italic;
   font-weight: bold;
   font-variant: small-caps;
-  height: auto;
 }
 
 intro:hover {
@@ -27,6 +36,23 @@ intro:hover {
 }
 
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+body {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
 .navbar {
   background-color: #060b26;
   width: 100%;
@@ -35,6 +61,7 @@ intro:hover {
   justify-content: flex-start;
   align-items: center;
   position: top;
+  transition: width 600ms ease;
 }
 
 .menu-bars {
@@ -102,14 +129,7 @@ intro:hover {
 span {
   margin-left: 16px;
 }
-.articlecard {
-  color: #666666;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  border-style: solid;
-  background-color: #ffffff;
-}
+
 .ukcard {
  color: #666666;
   width: 400px;
@@ -128,6 +148,5 @@ span {
   font-style: italic;
   font-weight: bold;
   font-variant: small-caps;
-
   height: auto;
 }

@@ -13,7 +13,7 @@ const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps
 
   return (
-    <Layout>
+    <Layout ClassName="body">
       <Head>
         <link
           rel="shortcut icon"
