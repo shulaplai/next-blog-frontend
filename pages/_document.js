@@ -6,7 +6,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* eslint-disable-next-line */}
-          <link rel="stylesheet" href="fontawesome/css/all.min.css" />
 
           <link
             rel="stylesheet"

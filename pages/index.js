@@ -1,9 +1,7 @@
 import React from "react"
-import Articles from "../components/articles"
-import Layout from "../components/layout"
+
 import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
-import Nav from "../components/nav/nav.js"
 import Link from "next/link"
 import Image from "next/image"
 import linkedin_icon from "../assets/css/LinkedIn_logo_initials.png"

@@ -1,12 +1,6 @@
 import React from "react"
 import Link from "next/link"
 import NextImage from "./image"
-import Card from "react-bootstrap/Card"
-import CardGroup from "react-bootstrap/CardGroup"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
-import Nav from "./nav/nav"
-import Container from "react-bootstrap/Container"
 
 const Cards = ({ article }) => {
   return (

@@ -1,8 +1,6 @@
 import Articles from "../../components/articles"
 import { fetchAPI } from "../../lib/api"
-import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import { FaDiceFive } from "react-icons/fa"
 
 const Category = ({ category, categories }) => {
   const seo = {
