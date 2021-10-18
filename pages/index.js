@@ -19,7 +19,14 @@ const Home = ({ articles, categories, homepage }) => {
         <Link href="https://roastedtea.click/category/baseball">
           baseball info
         </Link>
-        , tech , story and other thing.
+        <Link href="https://roastedtea.click/category/tech">software info</Link>
+        ,<Link href="https://roastedtea.click/category/story">story</Link> and
+        <Link href="https://roastedtea.click/category/new"> other things</Link>.
+      </p>
+      <p className="intro">
+        And you can see my
+        <Link href="https://roastedtea.click/category/tech"> projects </Link>
+        here and my github repository.
       </p>
       <p className="introicon">
         <a href="https://github.com/shulaplai">
