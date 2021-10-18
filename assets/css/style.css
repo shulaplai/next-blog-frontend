@@ -1,7 +1,6 @@
 .intro {
   display: block;
   justify-content: center;
-
   position: bottom;
   align-items: center;
   padding-top: 10%;
@@ -12,7 +11,6 @@
   font-style: italic;
   font-weight: bold;
   font-variant: small-caps;
-
   height: auto;
 }
 
@@ -27,9 +25,7 @@ intro:hover {
   padding-left: 45%;
   padding-right: 40%;
 }
-.introlink {
-  color: aqua;
-}
+
 
 .navbar {
   background-color: #060b26;

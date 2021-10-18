@@ -1,5 +1,4 @@
 import React from "react"
-
 import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
 import Link from "next/link"
