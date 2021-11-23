@@ -5,7 +5,7 @@ import NextImage from "./image"
 const Cards = ({ article }) => {
   return (
     <div
-      className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+      className="uk-card uk-card-default uk-grid-collapse uk-width-auto@s uk-margin"
       uk-grid
     >
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
@@ -14,7 +14,7 @@ const Cards = ({ article }) => {
             variant="left"
             image={article.image}
             width="300px"
-            hight="300px"
+            hight="370px"
             uk-cover
           />
 
