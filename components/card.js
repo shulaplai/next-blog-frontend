@@ -4,10 +4,7 @@ import NextImage from "./image"
 
 const Cards = ({ article }) => {
   return (
-    <div
-      className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
-      uk-grid
-    >
+    <div>
       <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
         <div className="uk-card-media-left uk-cover-container uk-card-hover">
           <NextImage
