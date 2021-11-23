@@ -11,8 +11,8 @@ const Cards = ({ article }) => {
             <div className="container">
               <NextImage
                 image={article.image}
-                width="300"
-                hight="400"
+                width="350"
+                hight="420"
                 uk-cover
               />
 
