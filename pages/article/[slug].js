@@ -27,11 +27,11 @@ const Article = ({ article, categories }) => {
         data-uk-img
         width="100%"
         hight="100%"
-      >
-        <h1>{article.title}</h1>
-      </div>
+      ></div>
+
       <div className="uk-section">
         <div className="uk-container uk-container-small">
+          <h1>{article.title}</h1>
           <ReactMarkdown source={article.content} escapeHtml={false} />
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
