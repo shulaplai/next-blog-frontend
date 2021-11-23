@@ -12,7 +12,7 @@ const Category = ({ category, categories }) => {
     <div className="center">
       <Seo seo={seo} />
 
-      <div className="uk-container">
+      <div>
         <h1>{category.name}</h1>
         <Articles articles={category.articles} />
       </div>
