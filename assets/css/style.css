@@ -7,6 +7,12 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
+.center {
+   justify-content: center;
+  align-items: center;
+    display: flex;
+
+}
 .intro {
   display: block;
   justify-content: center;

@@ -9,7 +9,7 @@ const Category = ({ category, categories }) => {
   }
 
   return (
-    <div>
+    <div className="center">
       <Seo seo={seo} />
 
       <div className="uk-container uk-container-large">
