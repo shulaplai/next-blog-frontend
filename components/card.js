@@ -4,7 +4,7 @@ import NextImage from "./image"
 
 const Cards = ({ article }) => {
   return (
-    <div className="container">
+    <div className="cardContainer">
       <div className="card">
         <div className="card__header">
           <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
