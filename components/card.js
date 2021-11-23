@@ -12,8 +12,8 @@ const Cards = ({ article }) => {
               <NextImage
                 variant="left"
                 image={article.image}
-                width="100%"
-                hight="100%"
+                width="300"
+                hight="400"
                 uk-cover
               />
 
