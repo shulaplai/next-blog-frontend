@@ -13,8 +13,11 @@ const Home = ({ articles, categories, homepage }) => {
 
       <p className="intro">
         Hello, I am Lai shu Lap. This is my blog. In here you can find
-        <Link href="https://roastedtea.click/category/translation">
-          translations
+        <Link
+          href="https://roastedtea.click/category/translation"
+          className="linkText"
+        >
+          translationsss
         </Link>
         <Link href="https://roastedtea.click/category/baseball">
           baseball info
@@ -22,12 +25,11 @@ const Home = ({ articles, categories, homepage }) => {
         <Link href="https://roastedtea.click/category/tech">software info</Link>
         ,<Link href="https://roastedtea.click/category/story">story</Link> and
         <Link href="https://roastedtea.click/category/new"> other things</Link>.
-      </p>
-      <p className="intro">
         And you can see my
         <Link href="https://roastedtea.click/category/tech"> projects </Link>
         here and my github repository.
       </p>
+      <p className="intro">你好我是黎庶立 這是我的網誌</p>
       <p className="introicon">
         <a href="https://github.com/shulaplai">
           <Image
