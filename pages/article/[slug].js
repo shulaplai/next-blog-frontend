@@ -21,7 +21,7 @@ const Article = ({ article, categories }) => {
 
       <div
         id="banner"
-        className="uk-height-auto uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
+        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
         data-src={imageUrl}
         data-srcset={imageUrl}
         data-uk-img
