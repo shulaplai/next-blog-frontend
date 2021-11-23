@@ -14,13 +14,9 @@
   max-width: 1200px;
   margin-block: 2rem;
   gap: 2rem;
+  
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-}
 
 .card {
   display: flex;
@@ -31,9 +27,14 @@ img {
   border-radius: 1em;
   background: #ECE9E6;
 background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+opacity: 0.3;
 
 }
-
+card:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 4rem 4rem rgba(0, 0, 0, 0.1);
+}
 
 
 .card__body {
