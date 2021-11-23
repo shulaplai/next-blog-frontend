@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -14,41 +14,36 @@
   max-width: 1200px;
   margin-block: 2rem;
   gap: 2rem;
-  
 }
-
 
 .card {
   display: flex;
   flex-direction: column;
   width: clamp(20rem, calc(20rem + 2vw), 22rem);
   overflow: hidden;
-  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
-  background: #ECE9E6;
-background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-opacity: 0.3;
-
-}
-card:hover {
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
   opacity: 1;
+}
+.card:hover {
+  
   transform: scale(1.2);
   box-shadow: 4rem 4rem rgba(0, 0, 0, 0.1);
 }
-
 
 .card__body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .center {
-   justify-content: center;
+  justify-content: center;
   align-items: center;
-    display: flex;
-
+  display: flex;
 }
 .intro {
   display: block;
@@ -60,17 +55,17 @@ card:hover {
   padding-right: 20%;
   color: #000000;
   height: auto;
-   font-size: 30px;
+  font-size: 30px;
   font-style: italic;
   font-weight: bold;
 }
-.linkText{
-   color: hsl(0, 0%, 0%);
-  font-size: 20px ;
+.linkText {
+  color: hsl(0, 0%, 0%);
+  font-size: 20px;
   font-style: italic;
   font-weight: bold;
   display: block;
- 
+
   padding-left: 20%;
   padding-right: 20%;
   font-variant: small-caps;
@@ -87,7 +82,6 @@ intro:hover {
   padding-left: 45%;
   padding-right: 40%;
 }
-
 
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -184,7 +178,7 @@ span {
 }
 
 .ukcard {
- color: #666666;
+  color: #666666;
   width: 100%;
   height: 100%;
   display: flex;
