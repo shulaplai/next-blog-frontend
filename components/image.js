@@ -12,7 +12,7 @@ const Image = ({ image, style }) => {
     <NextImage
       loader={loader}
       layout="intrinsic"
-      width="280px"
+      width="320px"
       height="400px"
       src={url}
       alt={alternativeText || ""}
