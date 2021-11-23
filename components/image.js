@@ -13,7 +13,7 @@ const Image = ({ image, style }) => {
       loader={loader}
       layout="intrinsic"
       width="300px"
-      height="370px"
+      height="400px"
       src={url}
       alt={alternativeText || ""}
     />

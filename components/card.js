@@ -14,7 +14,7 @@ const Cards = ({ article }) => {
             variant="left"
             image={article.image}
             width="300px"
-            hight="370px"
+            hight="400px"
             uk-cover
           />
 
