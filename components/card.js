@@ -4,22 +4,26 @@ import NextImage from "./image"
 
 const Cards = ({ article }) => {
   return (
-    <div className="card">
-      <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
-        <div className="container">
-          <NextImage
-            variant="left"
-            image={article.image}
-            width="320px"
-            hight="400px"
-            uk-cover
-          />
+    <div className="container">
+      <div className="card">
+        <div className="card__header">
+          <Link as={`/article/${article.slug}`} href="/article/[id]" passHref>
+            <div className="container">
+              <NextImage
+                variant="left"
+                image={article.image}
+                width="100%"
+                hight="100%"
+                uk-cover
+              />
 
-          <div className="uk-card-body">
-            <h3 className="uk-card-title">{article.title}</h3>
-          </div>
+              <div className="card_body">
+                <h3>{article.title}</h3>
+              </div>
+            </div>
+          </Link>
         </div>
-      </Link>
+      </div>
     </div>
   )
 }
