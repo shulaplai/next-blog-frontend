@@ -30,7 +30,7 @@
 .card:hover {
   
   transform: scale(1.2);
-  box-shadow: 4rem 4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 2rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .card__body {
