@@ -12,9 +12,9 @@
   justify-content: center;
   position: bottom;
   align-items: center;
-  padding-top: 10%;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
   color: #000000;
   height: auto;
    font-size: 30px;
@@ -23,9 +23,13 @@
 }
 .linkText{
    color: hsl(0, 0%, 0%);
-  font-size: 60px ;
+  font-size: 20px ;
   font-style: italic;
   font-weight: bold;
+  display: block;
+ 
+  padding-left: 20%;
+  padding-right: 20%;
   font-variant: small-caps;
   height: auto;
 }

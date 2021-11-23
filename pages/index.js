@@ -8,28 +8,36 @@ import githubicon from "../assets/css/GitHub-Mark.png"
 
 const Home = ({ articles, categories, homepage }) => {
   return (
-    <div>
+    <div className="intro">
       <Seo seo={homepage.seo} />
 
       <p className="intro">
-        Hello, I am Lai shu Lap. This is my blog. In here you can find
+        Hello, I am Lai shu Lap. This is my blog. In here you can find articles
+        about
+      </p>
+      <p className="linkText">
+        1. My projects about{" "}
+        <Link href="https://roastedtea.click/category/tech">
+          software development
+        </Link>
+      </p>
+      <p className="linkText">
+        2. My Hobby like {""}
         <Link
           href="https://roastedtea.click/category/translation"
           className="linkText"
         >
-          translationsss
-        </Link>
-        <Link href="https://roastedtea.click/category/baseball">
-          baseball info
-        </Link>
-        <Link href="https://roastedtea.click/category/tech">software info</Link>
-        ,<Link href="https://roastedtea.click/category/story">story</Link> and
-        <Link href="https://roastedtea.click/category/new"> other things</Link>.
-        And you can see my
-        <Link href="https://roastedtea.click/category/tech"> projects </Link>
-        here and my github repository.
+          translations
+        </Link>{" "}
+        ,<Link href="https://roastedtea.click/category/baseball">baseball</Link>
       </p>
-      <p className="intro">你好我是黎庶立 這是我的網誌</p>
+
+      <p className="linkText">
+        And you can see my projects
+        <Link href="https://roastedtea.click/category/tech"> here </Link>and in
+        my github.
+      </p>
+
       <p className="introicon">
         <a href="https://github.com/shulaplai">
           <Image
