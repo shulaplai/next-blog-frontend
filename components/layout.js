@@ -5,9 +5,9 @@ import Nav from "./nav/nav"
 
 const Layout = ({ children, categories, seo }) => (
   <div>
-        <Nav categories={categories} />
-        {children}
-      </div>
+    <Nav categories={categories} />
+    {children}
+  </div>
 )
 
 export default Layout
