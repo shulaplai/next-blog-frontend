@@ -83,17 +83,6 @@ intro:hover {
   padding-right: 40%;
 }
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
 body {
   color: black;
   background-color: rgb(255, 255, 255);
