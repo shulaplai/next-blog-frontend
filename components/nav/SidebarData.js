@@ -13,7 +13,7 @@ export const SidebarData = [
   },
   {
     title: "翻譯",
-    path: "https://roastedtea.click/category/translation",
+    path: "./category/translation",
     icon: <IoIcons.IoIosPaper />,
     cName: "nav-text",
   },
