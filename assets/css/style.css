@@ -89,6 +89,9 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .navbar {
   background-color: #060b26;
