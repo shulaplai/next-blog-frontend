@@ -1,18 +1,13 @@
 import Nav from "./nav/nav"
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+// import Container from "react-bootstrap/Container"
+// import Row from "react-bootstrap/Row"
+// import Col from "react-bootstrap/Col"
 
 const Layout = ({ children, categories, seo }) => (
-  <Container>
-    {/* Stack the columns on mobile by making one full-width and the other half-width */}
-    <Row>
-      <Col>
+  <div>
         <Nav categories={categories} />
         {children}
-      </Col>
-    </Row>
-  </Container>
+      </div>
 )
 
 export default Layout
