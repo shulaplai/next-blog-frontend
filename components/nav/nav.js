@@ -16,34 +16,32 @@ const Nav = ({ categories }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
-        <div className="navbar">
-          <a className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} />
-          </a>
-        </div>
-        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-          <ul className="nav-menu-items" onClick={showSidebar}>
-            <li className="navbar-toggle">
-              <a className="menu-bars">
-                <AiIcons.AiOutlineClose />
-              </a>
-            </li>
-            {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link href={item.path}>
-                    <a>
-                      {item.icon}
-                      <span>{item.title}</span>
-                    </a>
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
-        </nav>
-      </IconContext.Provider>
+      <div className="navbar">
+        <a className="menu-bars">
+          <FaIcons.FaBars onClick={showSidebar} />
+        </a>
+      </div>
+      <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+        <ul className="nav-menu-items" onClick={showSidebar}>
+          <li className="navbar-toggle">
+            <a className="menu-bars">
+              <AiIcons.AiOutlineClose />
+            </a>
+          </li>
+          {SidebarData.map((item, index) => {
+            return (
+              <li key={index} className={item.cName}>
+                <Link href={item.path}>
+                  <a>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </a>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
     </>
   )
 }
