@@ -14,7 +14,7 @@
   max-width: 1200px;
   margin-block: 2rem;
   gap: 2rem;
-  height :auto
+  height: auto;
 }
 
 .card {
@@ -29,7 +29,6 @@
   opacity: 1;
 }
 .card:hover {
-  
   transform: scale(1.2);
   box-shadow: 2rem 2rem rgba(0, 0, 0, 0.1);
 }
@@ -89,7 +88,6 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
- 
 }
 .navbar {
   background-color: #060b26;
