@@ -5,8 +5,6 @@ class MyDocument extends Document {
     return (
       <Html lang="zh-Hant-HK">
         <Head>
-          {/* eslint-disable-next-line */}
-
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css"

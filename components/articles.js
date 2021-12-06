@@ -6,9 +6,7 @@ const Articles = ({ articles }) => {
   return (
     <div>
       {Articles.map((article, i) => {
-        return (
-          <Cards article={article} key={`article__left__${article.slug}`} />
-        )
+        return <Cards article={article} key={`article__${article.slug}`} />
       })}
     </div>
   )

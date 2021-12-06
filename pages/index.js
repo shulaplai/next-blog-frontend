@@ -34,8 +34,8 @@ const Home = ({ articles, categories, homepage }) => {
 
       <p className="linkText">
         And you can see my projects
-        <Link href="https://roastedtea.click/category/tech"> here </Link>and in
-        my github.
+        <Link href="https://profoilo-simple.vercel.app/"> here </Link>and in my
+        github.
       </p>
 
       <p className="introicon">
