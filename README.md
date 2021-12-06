@@ -8,5 +8,13 @@ The website
 
 ![Alt text](assets/css/web.png "Title")
 
+## How to use
 
-Download/Clone
+download /clone
+
+```bash
+npm i 
+npm run dev
+
+
+Your app should be up and running on [http://localhost:3000](http://localhost:3000)! 
