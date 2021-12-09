@@ -4,7 +4,7 @@ A simple nextjs ,strapi blog.
 
 backend is https://github.com/shulaplai/next-blog
 
-The website 
+The website
 
 ![Alt text](assets/css/web.png "Title")
 
