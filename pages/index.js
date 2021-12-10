@@ -10,14 +10,14 @@ import { getStrapiMedia } from "../lib/media"
 const Home = ({ homepage }) => {
   return (
     <div className="intro">
-      <Head>
+      {/* <Head>
         <link
           rel="shortcut icon"
           href={getStrapiMedia(homepage.favicon)}
           width="50px"
           hight="100%"
         />
-      </Head>
+      </Head> */}
       <Seo seo={homepage.seo} />
 
       <p className="intro">
