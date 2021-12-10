@@ -7,13 +7,13 @@ import linkedin_icon from "../assets/css/LinkedIn_logo_initials.png"
 import githubicon from "../assets/css/GitHub-Mark.png"
 import Head from "next/head"
 import { getStrapiMedia } from "../lib/media"
-const Home = ({ homepage, global }) => {
+const Home = ({ homepage }) => {
   return (
     <div className="intro">
       <Head>
         <link
           rel="shortcut icon"
-          href={getStrapiMedia(global.favicon)}
+          href={getStrapiMedia(homepage.favicon)}
           width="50px"
           hight="100%"
         />
@@ -71,13 +71,10 @@ const Home = ({ homepage, global }) => {
 
 export async function getStaticProps() {
   // Run API calls in parallel
-  const [homepage, global] = await Promise.all([
-    fetchAPI("/homepage"),
-    fetchAPI("/global"),
-  ])
+  const [homepage] = await Promise.all([fetchAPI("/homepage")])
 
   return {
-    props: { articles, categories, homepage, global },
+    props: { homepage },
   }
 }
 
