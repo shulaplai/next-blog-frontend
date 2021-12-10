@@ -4,19 +4,19 @@ import Link from "next/link"
 import Image from "next/image"
 import linkedin_icon from "../assets/css/LinkedIn_logo_initials.png"
 import githubicon from "../assets/css/GitHub-Mark.png"
-// import Head from "next/head"
-// import { getStrapiMedia } from "../lib/media"
+import Head from "next/head"
+import { getStrapiMedia } from "../lib/media"
 const Home = ({ homepage }) => {
   return (
     <div className="intro">
-      {/* <Head>
+      <Head>
         <link
           rel="shortcut icon"
           href={getStrapiMedia(homepage.favicon)}
           width="50px"
           hight="100%"
         />
-      </Head> */}
+      </Head>
 
       <p className="intro">
         Hello, I am Lai shu Lap. This is my blog. In here you can find articles
