@@ -40,8 +40,8 @@ const Home = ({ homepage }) => {
       </p>
 
       <p className="linkText">
-        And you can see my projects in my
-        <Link href="https://2021-portfolio-simple.vercel.app/">portfolio</Link>
+        And you can see my projects in my{" "}
+        <Link href="https://2021-portfolio-simple.vercel.app/">portfolio</Link>{" "}
         and in my github.
       </p>
 
