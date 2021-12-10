@@ -10,28 +10,19 @@ import Layout from "../components/layout"
 export const GlobalContext = createContext({})
 
 const MyApp = ({ Component, pageProps }) => {
-  const { global } = pageProps
-
   return (
     <Layout className="center">
-      <Head>
-        <link
-          rel="shortcut icon"
-          href={getStrapiMedia(global.favicon)}
-          width="50px"
-          hight="100%"
-        />
-      </Head>
-      <GlobalContext.Provider value={global}>
-        <Component {...pageProps} />
-      </GlobalContext.Provider>
+      <Component {...pageProps} />
     </Layout>
   )
 }
+
+export default MyApp
 // getInitialProps disables automatic static optimization for pages that don't
 // have getStaticProps. So article, category and home pages still get SSG.
 // Hopefully we can replace this with getStaticProps once this issue is fixed:
-// https://github.com/vercel/next.js/discussions/10949
+//https://github.com/vercel/next.js/discussions/10949
+
 // MyApp.getInitialProps = async (ctx) => {
 //   // Calls page's `getInitialProps` and fills `appProps.pageProps`
 //   const appProps = await App.getInitialProps(ctx)
@@ -40,4 +31,3 @@ const MyApp = ({ Component, pageProps }) => {
 //   // Pass the data to our page via props
 //   return { ...appProps, pageProps: { global } }
 // }
-export default MyApp
