@@ -7,7 +7,7 @@ import { getStrapiMedia } from "../lib/media"
 import Layout from "../components/layout"
 
 // Store Strapi Global object in context
-export const GlobalContext = createContext({})
+// export const GlobalContext = createContext({})
 
 const MyApp = ({ Component, pageProps }) => {
   return (

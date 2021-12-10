@@ -1,5 +1,4 @@
 import React from "react"
-import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
 import Link from "next/link"
 import Image from "next/image"
@@ -18,7 +17,6 @@ const Home = ({ homepage }) => {
           hight="100%"
         />
       </Head> */}
-      <Seo seo={homepage.seo} />
 
       <p className="intro">
         Hello, I am Lai shu Lap. This is my blog. In here you can find articles
