@@ -2,7 +2,7 @@ import ReactMarkdown from "react-markdown"
 import Moment from "react-moment"
 import { fetchAPI } from "../../lib/api"
 import NextImage from "../../components/image"
-// import Seo from "../../components/seo"
+import Seo from "../../components/seo"
 import { getStrapiMedia } from "../../lib/media"
 
 const Article = ({ article, categories }) => {
@@ -17,7 +17,7 @@ const Article = ({ article, categories }) => {
 
   return (
     <>
-      {/* <Seo seo={seo} /> */}
+      <Seo seo={seo} />
 
       <div
         id="banner"

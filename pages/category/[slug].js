@@ -1,6 +1,6 @@
 import Articles from "../../components/articles"
 import { fetchAPI } from "../../lib/api"
-// import Seo from "../../components/seo"
+import Seo from "../../components/seo"
 
 const Category = ({ category, categories }) => {
   const seo = {
@@ -10,7 +10,7 @@ const Category = ({ category, categories }) => {
 
   return (
     <div className="center">
-      {/* <Seo seo={seo} /> */}
+      <Seo seo={seo} />
 
       <div className="uk-container">
         <h1>{category.name}</h1>
